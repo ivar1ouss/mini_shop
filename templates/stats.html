@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Статистика корзины{% endblock %}
+
+{% block content %}
+    <h2>Статистика корзины</h2>
+    <div class="stats-box">
+        <p><b>Всего товаров (штук):</b> {{ total_items }}</p>
+        <p><b>Уникальных позиций:</b> {{ unique_items }}</p>
+        <p><b>Итоговая сумма:</b> {{ total_sum }} ₽</p>
+    </div>
+{% endblock %}
